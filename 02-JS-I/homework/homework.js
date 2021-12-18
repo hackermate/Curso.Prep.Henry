@@ -243,18 +243,19 @@ function esVocal(letra){
   var vocales = ['a','e','i','o','u', 'A', 'E', 'I', 'O', 'U']
 
   if(!isNaN(letra)){
-    console.log("Ingrese una vocal, no números")
+    return "Ingrese una vocal, no números"
   }
     else if(vocales.indexOf(letra) > -1 ){
-      console.log(letra,". Si es una vocal")
+      return letra,". Si es una vocal"
     }else{
-      console.log(letra, ", No es vocal, ingrese solo una vocal")
+      return letra, ", No es vocal, ingrese solo una vocal"
     }
 }
 
 
 
 // No modificar nada debajo de esta línea
+
 // --------------------------------
 
 module.exports = {
